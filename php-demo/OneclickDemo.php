@@ -96,6 +96,7 @@ function main()
     } else {
         var_dump($ret);
         // error handler
+        // 降级短信
     }
 }
 main();
