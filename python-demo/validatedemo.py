@@ -95,4 +95,7 @@ if __name__ == "__main__":
             else:
                ## 无法确定, 降级短信
         else:
+            ## 降级短信
             print ("ERROR: ret.code=%s,msg=%s" % (ret['code'], ret['msg']))
+    else:
+         ## 降级短信
