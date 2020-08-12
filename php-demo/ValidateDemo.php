@@ -100,6 +100,7 @@ function main()
     } else {
         var_dump($ret);
         // error handler
+        // 建议进行二次验证,例如短信验证码
     }
 }
 main();
