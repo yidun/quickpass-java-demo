@@ -63,7 +63,7 @@ function check($params)
         'method' => 'POST',
         'timeout' => API_TIMEOUT,
         // read timeout in seconds
-        'content' => http_build_query($params),
+        'content' => http_build_query($params)
     ));
     $context = stream_context_create($options);
     $result = file_get_contents(API_URL, false, $context);
@@ -86,7 +86,7 @@ function main()
     var_dump($ret);
     if ($ret["code"] == 200) {
         $data = $ret["data"];
-        $phone = $data["phone"]
+        $phone = $data["phone"];
         if(empty($phone)){
             var_dump($data["resultCode"]);
             // 取号失败,建议进行二次验证,例如短信验证码

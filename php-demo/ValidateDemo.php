@@ -63,7 +63,7 @@ function check($params)
         'method' => 'POST',
         'timeout' => API_TIMEOUT,
         // read timeout in seconds
-        'content' => http_build_query($params),
+        'content' => http_build_query($params)
     ));
     $context = stream_context_create($options);
     $result = file_get_contents(API_URL, false, $context);
