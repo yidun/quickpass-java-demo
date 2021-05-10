@@ -3,7 +3,6 @@ package main
 import (
 	"crypto/md5"
 	"encoding/hex"
-	"encoding/json"
 	"fmt"
 	simplejson "github.com/bitly/go-simplejson"
 	"io/ioutil"
