@@ -65,12 +65,14 @@ func gen_signature(params url.Values) string {
 }
 
 func main() {
-    var phone string       //phone为手机号
-    var token string     //token为易盾返回的token
-    var accessToken string    //accessToken为运营商预取号获取到的token
-	taskIds := []string{phone,token,accessToken}
-	jsonString, _ := json.Marshal(taskIds)
-	params := url.Values{"taskIds": []string{string(jsonString)}}
+	params := url.Values{
+	            //phone为手机号
+	            "phone":   []string{"12345678912"},
+    	        //token为易盾返回的token
+        		"token":   []string{"123456"},
+        		//accessToken为运营商预取号获取到的token
+        		"accessToken": []string{"123456"},
+    }
 
 	ret := check(params)
 
