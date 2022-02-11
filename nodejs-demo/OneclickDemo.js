@@ -1,10 +1,10 @@
 var utils = require("./utils");
 //产品密钥ID，产品标识 
-var secretId = "***";
+var secretId = "your_secret_id";
 // 产品私有密钥，服务端生成签名信息使用，请严格保管，避免泄露 
-var secretKey = "***";
+var secretKey = "your_secret_key";
 // 业务ID，易盾根据产品业务特点分配 
-var businessId = "***";
+var businessId = "your_business_id";
 // 一键登录服务端check接口
 var apiurl = "https://ye.dun.163yun.com/v1/oneclick/check";
 //请求参数
